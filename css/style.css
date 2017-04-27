@@ -1,0 +1,28 @@
+body{
+	background-image: url(../img/backgroundimage.jpg);
+	color: white;
+	text-align: center;	
+	
+	
+}
+#test_status{font-size:36px;
+
+}
+#test{font-size:24px;
+}
+
+#progressBar{
+	height:40px;
+	width:100%;
+	max-width: 100%;
+	color:green;
+}
+button{
+	color: white;
+	font-size: 16px;
+	background-color: #FF63FF;
+}
+input{ size:22px;
+}
+
+

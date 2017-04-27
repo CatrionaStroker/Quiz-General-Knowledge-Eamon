@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form validation in Javascript</title>
+	
+	
+	<link href="css/formstyle.css" rel="stylesheet" type="text/css">
+	<script src="js/form1.js"></script>
+</head>
+<body>
+<h1> Please Enter Your Details.</h1>
+<div id="wrapper">
+	<form method="POST" action="quiz.html" onsubmit="return Validate()" name="vForm">
+		<div>
+			<input type="text" name="username" class="textInput" placeholder="Username">
+			<div id="name_error" class="val_error"></div>
+		</div>
+		<div>
+			<input type="email" name="email" class="textInput" placeholder="Email">
+			<div id="email_error" class="val_error"></div>
+		</div>
+		<div>
+			<input type="number" name="number" class="textInput" placeholder="Number">
+			<div id="number_error" class="val_error"></div>
+		</div>
+		
+		<div>
+			<input type="submit" class="btn" name="register" value="Register">
+		</div>
+	</form>
+</div>
+</body>
+</html>
+
+
+<script>
+	
+		// GETTING ALL INPUT TEXT FIELDS
+	
+	var username = document.forms["vForm"]["username"];
+	var email = document.forms["vForm"]["email"];
+	var number = document.forms["vForm"]["number"];
+	
+	// GETTING ALL ERROR OBJECTS
+	
+	var name_error = document.getElementById("name_error");
+	var email_error = document.getElementById("email_error");
+	var number_error = document.getElementById("number_error");
+	
+	// SETTING ALL EVENT LISTENERS
+	
+	username.addEventListener("blur", nameVerify, true);
+	email.addEventListener("blur", emailVerify, true);
+	number.addEventListener("blur", numberVerify, true);
+	
+</script>

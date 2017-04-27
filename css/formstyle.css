@@ -1,0 +1,41 @@
+form{
+	width: 50%;
+	margin: 100px auto;
+
+}
+form div{
+	margin: 3px auto;
+}
+.textInput{
+	margin-top: 2px;
+	height: 28px;
+	border: 1px solid #5E6E66;
+	font-size: 16px;
+	padding: 1px;
+	width: 100%;
+
+}
+.btn{
+	padding: 7px;
+	width: 100%;
+}
+.val_error{
+	color: #FF1F1F;
+}
+body
+{
+	background-image: url(../img/backgroundimage.jpg);
+	
+}
+h1{
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 120px;
+}
+#name_error{font-size:20px
+}
+#number_error{font-size:20px;
+}
+#email_error{font-size:20px;
+}
